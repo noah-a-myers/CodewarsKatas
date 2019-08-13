@@ -1,0 +1,12 @@
+def duplicate_count(text):
+    # Your code goes here
+    count = 0
+    i = 0
+    text = text.lower()
+    while i < len(text):
+        for s in text[i+1:]:
+            if text[i] == s:
+                count = count + 1
+                text = text.replace(s,"")
+        i = i + 1
+    return count
