@@ -1,0 +1,9 @@
+def persistence(n):
+    p = 0
+    while len(str(n)) > 1:
+        s = 1
+        for d in str(n):
+            s = s * int(d)
+        n = s
+        p = p + 1
+    return p

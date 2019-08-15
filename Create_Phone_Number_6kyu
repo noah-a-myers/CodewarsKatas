@@ -1,0 +1,11 @@
+def create_phone_number(n):
+    phone = "("
+    it = 0
+    for d in n:
+        if it == 3:
+            phone = phone + ") "
+        if it == 6:
+            phone = phone + "-"
+        phone = phone + str(d)
+        it = it + 1
+    return phone
